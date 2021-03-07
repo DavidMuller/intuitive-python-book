@@ -17,4 +17,4 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           registry: ghcr.io
           repository: davidmuller/intuitive-python-book/intuitive-python-book
-          tag_with_ref: true
+          tags: latest
