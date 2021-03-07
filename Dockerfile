@@ -1,4 +1,4 @@
-FROM python:3.8.8-slim
+FROM python:3.8.8
 
 RUN groupadd --system monty && useradd --no-log-init --system --shell /bin/bash --gid monty monty
 
