@@ -16,5 +16,5 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: DavidMuller/intuitive-python-book/intuitive-python-book
+          repository: davidmuller/intuitive-python-book/intuitive-python-book
           tag_with_ref: true
