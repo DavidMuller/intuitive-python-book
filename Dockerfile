@@ -1,9 +1,16 @@
 FROM python:3.8.8
 
-RUN groupadd --system monty && useradd --no-log-init --system --shell /bin/bash --gid monty monty
+RUN groupadd --system monty && useradd --create-home --no-log-init --system --shell /bin/bash --gid monty monty
 
 USER monty
 
-COPY --chown=monty code/ /code
+# pip adds bin shortcuts like `flake8` to `/home/monty/.local/bin`
+ENV PATH="/home/monty/.local/bin:${PATH}"
 
-WORKDIR /code
+COPY --chown=monty requirements.txt /requirements.txt
+RUN python -m pip install -r requirements.txt --require-hashes
+RUN rm -rf $(pip cache dir)
+
+COPY --chown=monty code/ /home/monty/code
+
+WORKDIR /home/monty/code
