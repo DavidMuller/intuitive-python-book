@@ -8,6 +8,8 @@ def append_to_a_list():  # <label id="code.thread_memory.append_to_a_list-fcn"/>
 
 if __name__ == "__main__":
     with concurrent.futures.ThreadPoolExecutor() as executor:
+        # note this is race condition prone code suitable only
+        # for illustrative purposes
         executor.submit(append_to_a_list)
         executor.submit(append_to_a_list)
         executor.submit(append_to_a_list)

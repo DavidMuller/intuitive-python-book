@@ -20,3 +20,6 @@ class TestWritePeopleJSON(unittest.TestCase):
             expected_json = {"people": ["David", "Adaobi"]}
             actual_json = json.load(fp=tmp_f)
             self.assertEqual(expected_json, actual_json)
+
+if __name__ == '__main__':
+    unittest.main()
