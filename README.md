@@ -1,6 +1,6 @@
-# Intuitive Python: Productive Development for Projects
+# Intuitive Python: Productive Development for Projects That Last
 
-This repository contains the source code and companion Docker image for [Intuitive Python: Productive Development for Projects](https://pragprog.com/titles/dmpython).
+This repository contains the source code and companion Docker image for [Intuitive Python: Productive Development for Projects That Last](https://pragprog.com/titles/dmpython).
 
 ## How To Use the Companion Docker Image
 
