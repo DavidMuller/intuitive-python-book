@@ -1,4 +1,4 @@
-FROM python:3.8.8
+FROM python:3.9.2
 
 RUN groupadd --system monty && useradd --create-home --no-log-init --system --shell /bin/bash --gid monty monty
 
