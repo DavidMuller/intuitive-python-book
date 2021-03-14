@@ -1,3 +1,5 @@
+# alternatively: `from backports.zoneinfo import ZoneInfo` if you
+# are on Python <= 3.9 and have installed backports.zoneinfo
 from zoneinfo import ZoneInfo
 
 def is_aware(dt_value):
