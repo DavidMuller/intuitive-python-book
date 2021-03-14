@@ -1,10 +1,15 @@
-from typing import Optional
+from typing import List, Tuple, Union
 
-def foo(value: int):
-    output: Optional[str]
-    if value > 1:
-        output = "big"
+def print_details(level: int):
+    user_object = {
+        "id": "2",
+        "name": "David",
+        "favorite_color": "blue",
+    }
+    keys: Union[List[str], Tuple[str, str, str]]  # <label id="code.change_type_fixed.hint"/>
+    if level <= 1:
+        keys = ["id", "name"]
     else:
-        output = None
+        keys = ("id", "name", "favorite_color")
 
-    print(output)
+    print(" ".join(user_object[k] for k in keys))

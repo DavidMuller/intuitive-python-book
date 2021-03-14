@@ -1,4 +1,10 @@
-def foo(value: int):
-    print(value)
+object_info = {
+    "123": {"description": "example object"},
+    "456": {"description": "another example object"},
+}
 
-foo(this_is_not_an_argument=3)
+def print_object_info(object_id: str):
+    info = object_info.get(object_id, default=f"{object_id} not found")
+    print(info)
+
+print_object_info(this_is_not_an_argument="oops")

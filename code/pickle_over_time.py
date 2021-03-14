@@ -1,15 +1,15 @@
 import pickle
 
-class Foo:
+class Snack:
     def __init__(self):
-        self.a = 1
+        self.cookie = "Oreo"
 
-foo_dumped = pickle.dumps(Foo())
+snack_dumped = pickle.dumps(Snack())
 
-class Foo:
+class Snack:
     def __init__(self):
-        self.a = 1
-        self.b = 2
+        self.cookie = "Oreo"
+        self.drink = "milk"
 
-foo_loaded = pickle.loads(foo_dumped)
-print(foo_loaded.b)
+snack_loaded = pickle.loads(snack_dumped)
+print(snack_loaded.drink)
