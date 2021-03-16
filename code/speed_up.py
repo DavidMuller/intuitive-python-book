@@ -3,7 +3,7 @@ import time
 from urllib import request
 
 def get_info():  # <label id="code.speed_up.get_info"/>
-    request.urlopen("https://example.com").read()
+    request.urlopen("https://example.com", timeout=30).read()
 
 def run_comparison():
     start_serial = time.time()
