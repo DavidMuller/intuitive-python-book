@@ -1,0 +1,18 @@
+name: Check code synced
+on:
+  # run once a day and/or whenever main is pushed
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  check_code_synced:
+    name: Check code synced
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Check code synced
+        run: python3 .github/check_code_synced.py
