@@ -1,4 +1,4 @@
-def get_farm_animals():  # <label id="code.prd_example.get_farm_animals"/>
+def get_farm_animals():  
     farm = ["cow", "pig", "goat"]
     return farm
 

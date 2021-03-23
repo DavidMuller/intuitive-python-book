@@ -1,4 +1,4 @@
-a = 1  # <label id="code.variable_does_not_exist.a"/>
+a = 1  
 
 # `a + oops` will never work:
 # Traceback (most recent call last):

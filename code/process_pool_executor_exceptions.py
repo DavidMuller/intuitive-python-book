@@ -2,7 +2,7 @@ import concurrent.futures
 
 def multiply(a, b):
     if a == 2:
-        raise ValueError("Oops, a = 2")  # <label id="code.process_pool_executor_exceptions.value-error"/>
+        raise ValueError("Oops, a = 2")  
     return a * b
 
 if __name__ == "__main__":

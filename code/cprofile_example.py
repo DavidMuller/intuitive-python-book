@@ -1,4 +1,4 @@
-import cProfile  # <label id="code.cprofile_example.import-cProfile"/>
+import cProfile  
 
 def a():
     b()
