@@ -1,9 +1,9 @@
 import concurrent.futures
 
-a_list = []  
+a_list = []
 
 
-def append_to_a_list():  
+def append_to_a_list():
     a_list.append(1)
 
 if __name__ == "__main__":

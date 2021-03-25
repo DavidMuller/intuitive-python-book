@@ -1,4 +1,4 @@
-a = 1  
+a = 1
 
 # `a + oops` will never work:
 # Traceback (most recent call last):

@@ -1,4 +1,4 @@
-path = "/etc/hosts"  
+path = "/etc/hosts"
 
 from os import *
 

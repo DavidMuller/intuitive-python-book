@@ -5,8 +5,8 @@ def print_details(level: int):
         "favorite_color": "blue",
     }
     if level <= 1:
-        keys = ["id", "name"]  
+        keys = ["id", "name"]
     else:
-        keys = ("id", "name", "favorite_color")  
+        keys = ("id", "name", "favorite_color")
 
     print(" ".join(user_object[k] for k in keys))

@@ -1,4 +1,4 @@
-import cProfile  
+import cProfile
 
 def a():
     b()

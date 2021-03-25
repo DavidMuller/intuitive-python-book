@@ -6,7 +6,7 @@ def print_details(level: int):
         "name": "David",
         "favorite_color": "blue",
     }
-    keys: Union[List[str], Tuple[str, str, str]]  
+    keys: Union[List[str], Tuple[str, str, str]]
     if level <= 1:
         keys = ["id", "name"]
     else:
